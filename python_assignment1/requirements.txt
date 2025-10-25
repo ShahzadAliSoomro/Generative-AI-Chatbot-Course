@@ -1,0 +1,11 @@
+# Python Assignment Requirements
+# This file lists Python package dependencies for the project
+
+# No external packages required for Assignment 1 (user_input_collector.py)
+# The script uses only Python standard library
+
+# Future dependencies can be added here
+# Example:
+# requests==2.31.0
+# beautifulsoup4==4.12.2
+

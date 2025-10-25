@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Demo - Tawk.to Integration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .setup-steps {
+            margin: 30px 0;
+        }
+
+        .setup-steps h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .step {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .step strong {
+            color: #764ba2;
+        }
+
+        .chat-notice {
+            background: #e7f3ff;
+            border: 2px dashed #2196F3;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .chat-notice h3 {
+            color: #2196F3;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature-card h4 {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Chatbot Demo Page</h1>
+        <p class="subtitle">Tawk.to Integration Example</p>
+
+        <div class="info-box">
+            <h3>About This Demo</h3>
+            <p>
+                This is a demo page for integrating Tawk.to live chat widget. 
+                Once configured, visitors can chat with you in real-time or leave 
+                messages when you're offline.
+            </p>
+        </div>
+
+        <div class="setup-steps">
+            <h2>Setup Instructions</h2>
+            
+            <div class="step">
+                <strong>Step 1:</strong> Sign up for a free account at 
+                <a href="https://www.tawk.to/" target="_blank">tawk.to</a>
+            </div>
+
+            <div class="step">
+                <strong>Step 2:</strong> Create a new property for your website
+            </div>
+
+            <div class="step">
+                <strong>Step 3:</strong> Go to Administration → Channels and copy your widget code
+            </div>
+
+            <div class="step">
+                <strong>Step 4:</strong> Replace the placeholder code at the bottom of this HTML file 
+                with your actual Tawk.to widget code
+            </div>
+
+            <div class="step">
+                <strong>Step 5:</strong> Save and reload this page to see the chat widget appear!
+            </div>
+        </div>
+
+        <div class="chat-notice">
+            <h3>👉 Look for the chat widget!</h3>
+            <p>Once configured, the Tawk.to chat widget will appear in the bottom-right corner of this page.</p>
+        </div>
+
+        <h2 style="margin-top: 30px; color: #333;">Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>💬 Live Chat</h4>
+                <p>Real-time messaging</p>
+            </div>
+            <div class="feature-card">
+                <h4>🤖 Automation</h4>
+                <p>Auto-responses</p>
+            </div>
+            <div class="feature-card">
+                <h4>📱 Mobile App</h4>
+                <p>Chat on the go</p>
+            </div>
+            <div class="feature-card">
+                <h4>📊 Analytics</h4>
+                <p>Visitor insights</p>
+            </div>
+        </div>
+
+        <div class="info-box" style="margin-top: 30px;">
+            <h3>🔧 Configuration Tips</h3>
+            <p>
+                • Customize widget colors to match your brand<br>
+                • Set up automated greeting messages<br>
+                • Create a knowledge base for common questions<br>
+                • Configure working hours and offline messages<br>
+                • Add team members for better coverage
+            </p>
+        </div>
+    </div>
+
+    <!-- 
+    =================================================================
+    TAWK.TO WIDGET CODE - REPLACE WITH YOUR OWN
+    =================================================================
+    
+    Instructions:
+    1. Go to https://dashboard.tawk.to/
+    2. Navigate to Administration > Channels
+    3. Copy your widget code
+    4. Replace the code below with your actual Tawk.to script
+    
+    Example format:
+    -->
+    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    // PLACEHOLDER - Replace with your actual Tawk.to code
+    // 
+    // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    // (function(){
+    // var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    // s1.async=true;
+    // s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/YOUR_WIDGET_ID';
+    // s1.charset='UTF-8';
+    // s1.setAttribute('crossorigin','*');
+    // s0.parentNode.insertBefore(s1,s0);
+    // })();
+    
+    // For testing purposes, you can also add custom Tawk_API configurations:
+    // Tawk_API.onLoad = function(){
+    //     console.log('Tawk.to widget loaded successfully!');
+    // };
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
+
