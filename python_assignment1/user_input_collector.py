@@ -1,8 +1,6 @@
 """
 Python Input Collector - Assignment
 Collecting user input for different data types (string, integer, float)
-
-Student Assignment for Python Course
 """
 
 import json
